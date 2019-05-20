@@ -47,9 +47,12 @@ export const fetchStream = id => async dispatch => {
 };
 
 export const editStream = (id, formValues) => async dispatch => {
-  const response = streams.put(`/streams/${id}`, formValues);
+  const response = await streams.put(`/streams/${id}`, formValues);
 
   dispatch({ type: EDIT_STREAM, payload: response.data });
+
+  // navigate user to home route once user creates stream successfully
+  history.push("/");
 };
 
 export const deleteStream = id => async dispatch => {
