@@ -1,15 +1,9 @@
 {
   "streams": [
     {
-      "title": "First Stream",
+      "title": "This is how a created stream looks",
       "description": "Hello World!",
       "id": 1
-    },
-    {
-      "title": "Programmatic Navigation",
-      "description": "Programmatic navigation implementation",
-      "userId": "109333866742954570299",
-      "id": 3
     }
   ]
 }
